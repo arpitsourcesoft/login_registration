@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html Lang = "en"
+<head>
+    <meta charset ='UTF_8'
+    <meta name = "viewpoint" content = "width=device-width",
+    initial-scale = 1.0
+    {% comment %} <title>Student Information</title> {% endcomment %}
+    
+</head>
+<body>
+<table>
+    <h3>User Information</h3>
+    <th>first_name</th>
+    <th>last_name</th>
+    <th>email</th>
+    {%for User in objects %}
+    <tr>
+        <td>{{User.first_name}}</td>
+        <td>{{User.last_name}}</td>
+        <td>{{User.email}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
